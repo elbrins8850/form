@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #000;
+        }
+        .box {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(3, 131, 131);
+        }
+        table,td,tr,th{
+            border: solid 1px #333;
+            padding: 5px;
+        }
+        table{
+            box-shadow: 2px 2px 10px 5px rgba(8, 207, 207, 0.89), -2px -2px 10px 5px rgba(8, 207, 207, 0.89);
+        }
+        form{
+            background-color: rgba(79, 132, 230, 0.774);
+        }
+        button{
+            background-color: rgb(12, 12, 12);
+            outline: none;
+            border: 1px solid #eee;
+            padding: 8px 12px;
+            color: #fff;
+            transition: all .4s;
+            border-top-right-radius: 22px;
+            border-bottom-left-radius: 22px;
+        }
+        button:hover{
+            background-color: #444;
+            cursor: pointer;
+            border-top-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+            border-top-left-radius: 22px;
+            border-bottom-right-radius: 22px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box">
+        <form method="GET">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">
+                            <h1>
+                                Rigstartion Form
+                            </h1>
+                        </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="l">First Name</label>
+                        </td>
+                        <td>
+                            <input type="name" id="l" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Last name">Last Name</label>
+                        </td>
+                        <td>
+                            <input type="name" id="Last name" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="User name">User Name</label>
+                        </td>
+                        <td>
+                            <input type="name" id="User name" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="password">password</label>
+                        </td>
+                        <td>
+                            <input type="password" id="password" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tarck</td>
+                        <td>
+                            <select>
+                            <option value="0" disabled hidden selected required>chose at less one</option>
+                            <option value="1">SD</option>
+                        </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">
+                            Gender
+                        </td>
+                        <td>
+                            <input name="h" type="radio" id="m" required> <label for="m">male</label>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <input name="h" type="radio" id="f" required> <label for="f">Fmale</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">
+                            Favorits
+                        </td>
+                        <td>
+                            <input type="checkbox" id="oo"> <label for="oo">Football</label>
+                            <input type="checkbox" id="hh"> <label for="hh">Basketball</label>
+                            <input type="checkbox" id="tt"> <label for="tt">Games</label>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="gg"> <label for="gg">Reading</label>
+                            <input type="checkbox" id="ss"> <label for="ss">Swimming</label>
+                            <input type="checkbox" id="T"> <label for="T">Travil</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="5">Discription</label>
+                        </td>
+                        <td>
+                            <textarea cols="30" rows="5" minlength="8" maxlength="15" id="5" required></textarea>
+                        </td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <th colspan="2">
+                            <button class="s" type="submit">
+                            submit 
+                        </button>
+                            <button class="r" type="reset">
+                            reset
+                        </button>
+                        </th>
+                    </tr>
+                </tfoot>
+
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
